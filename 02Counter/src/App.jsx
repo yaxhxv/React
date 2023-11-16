@@ -4,33 +4,29 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
- 
-let [counter, setCounter] = useState(0);
-// add the values only uptil 20
-let addValue = () =>{
-  if(counter >=0 && counter < 20){
-    setCounter(counter +1);
+   
+  let [count, setCount] = useState(0);
+
+  let addValue = ()=>{
+    if(count >=0 && count<20)
+    setCount(count +1);
   }
-  
-}
 
-// decrease the values only up to 0
-
-let decValue = () =>{
-  if(counter >0)
-  setCounter(counter -1)
-}
+  let decValue = ()=>{
+    if(count >0)
+    setCount(count -1);
+  }
 
 
-  return (
-    <> 
-    <h1>React counter app</h1>
-    <h2>Counter value = {counter}</h2>
-    <button onClick={addValue}><h3>+1</h3></button>
-    <button onClick={decValue}><h3>-1</h3></button>
 
-    </>
-  )
+return(
+  <div>
+    <h1>React Counter App</h1>
+    <h2>The Count is : {count}</h2>
+    <button onClick={addValue}>+1</button>
+    <button onClick={decValue}>-1</button>
+  </div>
+)
 }
 
 export default App
