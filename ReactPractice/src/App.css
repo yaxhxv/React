@@ -1,0 +1,22 @@
+body{
+  background-color: rgb(10, 7, 7);
+}
+
+#inputt{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+  border: none
+}
+
+h1{
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  padding: 10px;
+  margin: 10px;
+  
+}
